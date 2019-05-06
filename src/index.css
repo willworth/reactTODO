@@ -6,6 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: darkslategrey;
+  color: wheat;
 }
 
 code {
@@ -15,4 +17,34 @@ code {
 
 .done {
   text-decoration: line-through;
+}
+
+button {
+  border: 0;
+  border-radius: 0.25rem;
+  background: yellow;
+  color: black;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: green;
+}
+
+.addedItem {
+  color: grey;
+  border: solid goldenrod 2px;
+  background: burlywood;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 1rem 0.2rem;
 }

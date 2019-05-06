@@ -120,11 +120,11 @@ class Todo extends Component {
         </form>
         <ul>
           {this.state.mockData.map(item => (
-            <li key={item.id} className={ item.done ? 'done' : 'hidden' }>
+            <li key={item.id} className= {`addedItem {item.done ? 'done' : 'hidden' }`}>
               {item.title}
-              <button onClick={this.onDeleteHandle.bind(this, item.id)}>Delete</button>
-              <button onClick={this.onEditHandle.bind(this, item.id, item.title)}>Edit</button>
-              <button onClick={this.onCompleteHandle.bind(this, item.id)}>Complete</button>
+              <button className = "button" onClick={this.onDeleteHandle.bind(this, item.id)}>Delete</button>
+              <button className = "button" onClick={this.onEditHandle.bind(this, item.id, item.title)}>Edit</button>
+              <button className = "button" onClick={this.onCompleteHandle.bind(this, item.id)}>Complete</button>
             </li>
           ))}
         </ul>
